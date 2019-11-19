@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Logistics &mdash; Colorlib Website Template</title>
+    <title>Alpha Towing and Trucking</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
     
   </head>
   <body>
@@ -44,27 +49,21 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Logistics</a></h1>
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><img src="./images/alpha-logo.PNG" width="200px" height="200px"/></a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
                 <li class="has-children">
-                  <a href="services.html">Services</a>
+                  <a href="#services">Services</a>
                   <ul class="dropdown">
-                    <li><a href="#">Air Freight</a></li>
-                    <li><a href="#">Ocean Freight</a></li>
-                    <li><a href="#">Ground Shipping</a></li>
-                    <li><a href="#">Warehousing</a></li>
-                    <li><a href="#">Storage</a></li>
+                    <li><a href="#services">Towing</a></li>
+                    <li><a href="#services">Trucking</a></li>
                   </ul>
                 </li>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact-us">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -81,7 +80,7 @@
 
   
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/unsplash-1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -89,14 +88,14 @@
             
 
             <h1 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">Covering All of Metro Atlanta</h1>
-            <p><a href="#" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
+            <p><a href="#free-quote-container" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
 
           </div>
         </div>
       </div>
     </div>  
 
-    <div class="container">
+    <div id="free-quote-container" class="container">
       <div class="row align-items-center no-gutters align-items-stretch overlap-section">
         <div class="col-md-4">
           <div class="feature-1 pricing h-100 text-center">
@@ -104,234 +103,53 @@
               <span class="icon-dollar"></span>
             </div>
             <h2 class="my-4 heading">Best Prices</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
+            <p>Towing for as low as $79*</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="free-quote bg-dark h-100">
             <h2 class="my-4 heading  text-center">Get Free Quote</h2>
-            <form method="post">
+            <form method="post" action="https://formspree.io/xpzzbgej">
               <div class="form-group">
                 <label for="fq_name">Name</label>
-                <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name">
+                <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name" required>
               </div>
               <div class="form-group mb-4">
                 <label for="fq_email">Email</label>
-                <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email">
+                <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email" required> 
+              </div>
+              <div class="form-group mb-4">
+                <label for="fq_phone">Phone</label>
+                <input type="text" class="form-control btn-block" id="fq_phone" name="fq_phone" placeholder="Enter Phone" required>
+              </div>
+              <div class="form-group mb-4">
+                <label for="fq_from">Tow From</label>
+                <input type="text" class="form-control btn-block" id="fq_from" name="fq_from" placeholder="Tow From Address">
+              </div>
+              <div class="form-group mb-4">
+                <label for="fq_to">Tow To</label>
+                <input type="text" class="form-control btn-block" id="fq_to" name="fq_to" placeholder="Tow To Address">
               </div>
               <div class="form-group">
                 <input type="submit" class="btn btn-primary text-white py-2 px-4 btn-block" value="Get Quote">  
               </div>
+              <input type="hidden" name="_next" value="https://www.alphatrucking.com"/>
             </form>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature-3 pricing h-100 text-center">
-            <div class="icon">
+            <a href="tel:678-925-1326"><div class="icon">
               <span class="icon-phone"></span>
-            </div>
-            <h2 class="my-4 heading">24/7 Support</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
+            </div></a>
+            <h2 class="my-4 heading">Available 24 / 7</h2>
+            <p>Click Above to Call us. We are standing by</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0 text-primary">What We Offer</h2>
-            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-              <div>
-                <h3>Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
-              <div>
-                <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-              <div>
-                <h3>Ground Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  
-
-    <div class="site-section block-13">
-      <!-- <div class="container"></div> -->
-
-
-      <div class="owl-carousel nonloop-block-13">
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Storage</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Air Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Ship</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Ware Housing</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-
 
     
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">More Services</h2>
-            <p class="color-black-opacity-5">We Offer The Following Services</p>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-              <div>
-                <h3>Air Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
-              <div>
-                <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-              <div>
-                <h3>Ground Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-barn"></span></div>
-              <div>
-                <h3>Warehousing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-platform"></span></div>
-              <div>
-                <h3>Storage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-car"></span></div>
-              <div>
-                <h3>Delivery Van</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-            <h2 class="text-white font-weight-light mb-5 h1">View Our Services By Watching This Short Video</h2>
-            
-          </div>
-        </div>
-      </div>
-    </div>  
     
     <div class="site-section border-bottom">
       <div class="container">
@@ -350,7 +168,7 @@
                 <p>John Smith</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Quick response. Came by to pick my car on time and delivered it safely.&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -361,7 +179,7 @@
                 <p>Christine Aguilar</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Good Service. Will use them again.&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -373,99 +191,107 @@
                 <p>Robert Spears</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Very Professional. They know what they are doing.&rdquo;</p>
               </blockquote>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-3">
-                <p>Bruce Rogers</p>
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Our Blog</h2>
-            <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-          </div>
-        </div>
-        <div class="row mb-3 align-items-stretch">
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/blog_1.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/blog_2.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="site-section border-top">
+    <div id="services" class="site-section border-top">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="mb-5 text-black">Try Our Services</h2>
-            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5 text-white">Get Started</a></p>
+            <p class="mb-0"><a href="#free-quote-container" class="btn btn-primary py-3 px-5 text-white">Get Started</a></p>
           </div>
         </div>
       </div>
     </div>
-    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+
+            
+
+            <form action="https://formspree.io/xnqqwejw" class="p-5 bg-white">
+             
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          <div id="contact-us" class="col-md-5">
+            
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">Address</p>
+              <a target="_blank" href="https://goo.gl/maps/ewWPAbBaWVgCt4VJ6"><p class="mb-4">11272 Musette Cir Alpharetta GA 30009</p></a>
+
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="tel:678-925-1326">+1 678 925 1326</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="mailto:alphatowing.atl@gmail.com">alphatowing.atl@gmail.com</a></p>
+
+            </div>
+            
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">More Info</h3>
+              <p>Soon ...</p>
+              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Learn More</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-md-9">
             <div class="row">
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Products</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
+              
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Follow Us</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
